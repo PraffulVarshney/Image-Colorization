@@ -40,7 +40,7 @@ The network used for generators in conditional GAN is not the same as convention
     
 ### References
   Pix2Pix Image Translation Paper  (https://arxiv.org/pdf/1611.07004.pdf) <br/>
-  This project is done under the guidance of Vision And Language Group @IIT Roorkee
+  This project is done under the guidance of <a href="https://github.com/vlgiitr">Vision & Language Group, IIT Roorkee</a><br/>
 ### Contributers
   <a href="https://github.com/praffulv-225">Prafful Varshney</a><br/>
    <a href="https://github.com/raosatyam">Satyam Yadav</a><br/>
