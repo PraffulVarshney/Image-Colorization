@@ -11,10 +11,6 @@ The task of colourizing black and white photographs necessitates a lot of human 
 •	The generator is trained via adversarial loss, which encourages the generator to generate plausible images in the target domain. The generator is also updated via L1 loss measured between the generated image and the predicted output image. This additional loss encourages the generator model to create plausible translations of the source image.<br/>
 •	The discriminator is provided with both a source image and the target image and must determine whether the target is a possible transformation of the source image.<br/>
    
-<a href="url"><img src="https://user-images.githubusercontent.com/96406063/176681673-337b10ab-ac3d-4552-9db5-f2d003ce0200.png" width="600" height = "45">
-  <a href="url"><img src="https://user-images.githubusercontent.com/96406063/176681474-04b8e936-8095-4260-a4b4-e4d53f9047d7.png" width="600" height = "45">
-<a href="url"><img src="https://user-images.githubusercontent.com/96406063/176681259-7b140bc9-9bc8-4d4c-bfce-5e5c47ede77a.png" width="600" height = "45">
-
 ### RGB L*A*B
 
 RGB operates on three channels: red, green and blue. Lab is a conversion of the same information to a lightness component L*, and two color components - a* and b*. Lightness is kept separate from color, so that you can adjust one without affecting the other. "Lightness" is designed to approximate human vision, which is very sensitive to green but less to blue. If you brighten in Lab space, the result will often look more correct to the eye, color-wise.<br/> 
@@ -31,14 +27,22 @@ The network used for generators in conditional GAN is not the same as convention
    Here we have used PatchGAN network for discriminator which classifies the patches of an input image as real or fake instead of the entire image. PatchGAN discriminator systemizes each NxN patch in an image as real or fake and then runs convolutionally across the image to return a single feature map of real or fake predictions that can be averaged to give a single score which is the final output D of the discriminator. An advantage of PatchGAN is that a fixed-size patch discriminator can also be applied to arbitrarily large images.<br/>
  
   <a href="url"><img src="https://user-images.githubusercontent.com/79749572/176719612-5686de87-e67d-4037-ac5f-d97c6a9a135d.png" width="600" height = "350">
+  
+  <a href="url"><img src="https://user-images.githubusercontent.com/96406063/176681673-337b10ab-ac3d-4552-9db5-f2d003ce0200.png" width="600" height = "45">
+  <a href="url"><img src="https://user-images.githubusercontent.com/96406063/176681474-04b8e936-8095-4260-a4b4-e4d53f9047d7.png" width="600" height = "45">
+<a href="url"><img src="https://user-images.githubusercontent.com/96406063/176681259-7b140bc9-9bc8-4d4c-bfce-5e5c47ede77a.png" width="600" height = "45">
       
 ### Results
+
+  <a href="url"><img src="https://user-images.githubusercontent.com/96406063/176685572-d9e0a967-2709-49e6-80e0-de750f8b22a9.png" width="720" height = "350">
+  <a href="url"><img src="https://user-images.githubusercontent.com/96406063/176715153-d17bf7f1-f7e3-439f-ad29-a0825bca1972.png" width="720" height = "350">
+  <a href="url"><img src="https://user-images.githubusercontent.com/96406063/176715174-1c1bc074-dad8-4f75-a9da-461e131d4bf5.png" width="720" height = "350">
     
 ### References
   Pix2Pix Image Translation Paper  (https://arxiv.org/pdf/1611.07004.pdf) <br/>
   This project is done under the guidance of Vision And Language Group @IIT Roorkee
 ### Contributers
-  Satyam Yadav<br/>
-  Prafful Varshney
+  <a href="https://github.com/praffulv-225">Prafful Varshney</a><br/>
+   <a href="https://github.com/raosatyam">Satyam Yadav</a><br/>
     
 .
