@@ -6,10 +6,10 @@ The task of colourizing black and white photographs necessitates a lot of human 
 
 ## Methodology:
 
-•	The colorization of grayscale images can be thought of as an image-to-image translation task where we have the corresponding labels for the input grayscale image. A conditional GAN conditioned on grayscale images can be used to generate the corresponding colorized images.</br>
-•	The architecture of the model consists of a conditional generator with grayscale image inputs and a random noise vector and the output of the generator are two image channels a, b in the LAB image space to be concatenated with the L channel i.e. the grayscale input image.<br/>
-•	The generator is trained via adversarial loss, which encourages the generator to generate plausible images in the target domain. The generator is also updated via L1 loss measured between the generated image and the predicted output image. This additional loss encourages the generator model to create plausible translations of the source image.<br/>
-•	The discriminator is provided with both a source image and the target image and must determine whether the target is a possible transformation of the source image.<br/>
+- The colorization of grayscale images can be thought of as an image-to-image translation task where we have the corresponding labels for the input grayscale image. A conditional GAN conditioned on grayscale images can be used to generate the corresponding colorized images.</br>
+- The architecture of the model consists of a conditional generator with grayscale image inputs and a random noise vector and the output of the generator are two image channels a, b in the LAB image space to be concatenated with the L channel i.e. the grayscale input image.<br/>
+- The generator is trained via adversarial loss, which encourages the generator to generate plausible images in the target domain. The generator is also updated via L1 loss measured between the generated image and the predicted output image. This additional loss encourages the generator model to create plausible translations of the source image.<br/>
+- The discriminator is provided with both a source image and the target image and must determine whether the target is a possible transformation of the source image.<br/>
    
 ### RGB L*A*B
 
@@ -39,10 +39,9 @@ The network used for generators in conditional GAN is not the same as convention
   <a href="url"><img src="https://user-images.githubusercontent.com/96406063/176715174-1c1bc074-dad8-4f75-a9da-461e131d4bf5.png" width="720" height = "350">
     
 ### References
-  Pix2Pix Image Translation Paper  (https://arxiv.org/pdf/1611.07004.pdf) <br/>
+  - Pix2Pix Image Translation Paper  (https://arxiv.org/pdf/1611.07004.pdf) <br/>
+  - Pytorch Tutorials<br/>
   This project is done under the guidance of Vision And Language Group @IIT Roorkee
 ### Contributers
   <a href="https://github.com/praffulv-225">Prafful Varshney</a><br/>
    <a href="https://github.com/raosatyam">Satyam Yadav</a><br/>
-    
-.
